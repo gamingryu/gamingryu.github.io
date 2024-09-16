@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Pengguna</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-page">
+            <div class="profile-picture">
+                <img src="profile_picture.jpg" alt="">
+            </div>
+            <h2 id="usernameDisplay"></h2>
+            <!-- Informasi lain tentang pengguna bisa ditambahkan di sini -->
+        </div>
+    </div>
+
+    <script>
+        var username = localStorage.getItem("username");
+        document.getElementById("usernameDisplay").innerText = username;
+    </script>
+</body>
+</html>
